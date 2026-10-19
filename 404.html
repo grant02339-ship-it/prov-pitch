@@ -1,0 +1,10 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><title>PROV: this page has moved</title><meta name="robots" content="noindex">
+<script>
+var NEW = {firms: "prov-firms/", advisors: "prov-advisors/", alts: "prov-alts/", watch: "prov-watch/", exits: "prov-watch/"};
+var path = location.pathname.replace(/^\/prov-pitch\/?/, "");
+var m = path.match(/^(firms|advisors|alts|watch|exits)(\/(pitch\.html|intake\.html)?)?$/);
+var target = "https://grant02339-ship-it.github.io/" + (m ? NEW[m[1]] + (m[3] === "intake.html" ? "intake.html" : "") : "prov-pitch/");
+location.replace(target + location.search + location.hash);
+</script></head><body style="font-family:sans-serif;max-width:560px;margin:80px auto;padding:0 20px">
+<p>This page has moved. Go to <a href="https://grant02339-ship-it.github.io/prov-pitch/">PROV</a>.</p></body></html>
